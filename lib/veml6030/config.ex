@@ -11,7 +11,7 @@ defmodule VEML6030.Config do
     reserved = 0
     persistence_protect = 0
 
-    <<integer::16>> = <<
+    <<_integer::16>> = <<
       reserved::3,
       gain(config.gain)::2,
       reserved::1,
