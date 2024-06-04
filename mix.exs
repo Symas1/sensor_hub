@@ -48,7 +48,7 @@ defmodule SensorHub.MixProject do
       # bumps to Nerves systems. Since these include Linux kernel and Erlang
       # version updates, please review their release notes in case
       # changes to your application are needed.
-      {:nerves_system_rpi0, "~> 1.24", runtime: false, targets: :rpi0},
+      {:nerves_system_rpi0, "~> 1.24", runtime: false, targets: :rpi0}
     ]
   end
 
