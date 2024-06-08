@@ -4,8 +4,8 @@ defmodule VEML6030.Comm do
 
   @light_register <<4>>
 
-  def discover(possible_addresses \\ [0x10, 0x48]) do
-    I2C.discover_one!(possible_addresses)
+  def discover() do
+    I2C.discover_one!([0x10, 0x48])
   end
 
   def open(bus_name) do
